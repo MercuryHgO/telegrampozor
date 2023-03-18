@@ -17,7 +17,7 @@ end
 
 --^^^FUNCTIONS^^^
 
-local api = require('telegram-bot-lua.core').configure('6245582395:AAGsYtANsejczNU2ALEZurTWpi2rZHkJxOw')
+local api = require('telegram-bot-lua.core').configure('')
 local utf8 = require('lua-utf8')
 
 local che = false
