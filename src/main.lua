@@ -48,7 +48,7 @@ function api.on_message(message)
         )
         che = false
     elseif Message
-            and utf8.lower(Message) == '/sottime'
+            and (Message == '/sottime' or Message == '/sottime@PozorDiriaviyBot')
     then
         api.send_message(
                 message.chat.id,
