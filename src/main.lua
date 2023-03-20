@@ -17,6 +17,8 @@ end
 
 --^^^FUNCTIONS^^^
 
+print('Ver 1')
+
 local api = require('telegram-bot-lua.core').configure('6245582395:AAGsYtANsejczNU2ALEZurTWpi2rZHkJxOw')
 local utf8 = require('lua-utf8')
 
@@ -46,7 +48,7 @@ function api.on_message(message)
         )
         che = false
     elseif Message
-            and Message:match('Корабль сколько времени')
+            and utf8.lower(Message) == '/sottime'
     then
         api.send_message(
                 message.chat.id,
